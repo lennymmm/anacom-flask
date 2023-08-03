@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hoja de cálculo de Google Sheets</title>
+</head>
+<body>
+    <h1>Datos de la hoja de cálculo</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>NrOp</th>
+                <th>Nombre</th>
+                <th>Resp1</th>
+                <th>Resp2</th>
+                <!-- Agrega más encabezados según las columnas de tu hoja de cálculo -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+                <tr>
+                    <td>{{ row['id'] }}</td>
+                  <td>{{ row['NrOp'] }}</td>
+                <td>{{ row['Nombre'] }}</td>
+                   <td>{{ row['Resp1'] }}</td>
+                    <td>{{ row['Resp2'] }}</td>   <!--   -->
+                    <!-- Agrega más columnas según las columnas de tu hoja de cálculo -->
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+```
